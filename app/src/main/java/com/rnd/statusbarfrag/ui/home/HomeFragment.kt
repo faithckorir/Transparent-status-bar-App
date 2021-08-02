@@ -38,11 +38,7 @@ class HomeFragment : Fragment() {
             decorView.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
             addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
-                requireActivity().window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-            }
             navigationBarColor = ContextCompat.getColor(requireContext(), R.color.white)
             statusBarColor = Color.TRANSPARENT}
 
